@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container py-5">
+      <!-- bai1 -->
+        <div>
+          <h3 class="text-danger">bai tap 1</h3>
+        <div class="form-group">
+            <label for="">Nhap so thu nhat</label>
+            <input type="number" id="txt-num1"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <div class="form-group">
+            <label for="">Nhap so thu hai</label>
+            <input type="number" id="txt-num2"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <div class="form-group">
+            <label for="">Nhap so thu ba</label>
+            <input type="number" id="txt-num3"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <button id="btn-bai1" class="btn btn-outline-info"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">Ket Qua</button>
+        <p id="kq-bai1" class="mt-5 text-danger"></p>
+       </div>
+       <!-- bai 2 -->
+       <div>
+        <h3 class="text-danger">bai tap 2</h3>
+        <form>
+            <select id = "myList"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+            <option> Chọn Thành Viên </option>
+            <option> Bố </option>
+            <option> Mẹ </option>
+            <option> Anh Trai </option>
+            <option> Em Gái </option>
+            </select>
+           
+            <p type = "text" id = "favourite" class="mt-3" ></p>
+            </form>
+            <button id="btn-bai2" class="btn btn-outline-info mt-2"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">Gửi Lời Chào</button>
+       
+       </div>
+
+       <!-- bài 3 -->
+       <div class="mt-5 ">
+        <h3 class="text-danger">bai tap 3</h3>
+        <div class="form-group">
+            <label for="">Nhap so thu nhat</label>
+            <input type="number" id="txt-number1"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <div class="form-group">
+            <label for="">Nhap so thu hai</label>
+            <input type="number" id="txt-number2"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <div class="form-group">
+            <label for="">Nhap so thu ba</label>
+            <input type="number" id="txt-number3"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <button id="btn-bai3" class="btn btn-outline-info"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">Ket Qua</button>
+        <p id="kq-bai3" class="mt-5 text-danger"></p>
+       </div>
+
+       <!-- bai 4 -->
+       <div class="mt-5">
+        <h3 class="text-danger">bai tap 4</h3>
+        <div class="form-group">
+          <label for="">Nhập cạnh 1</label>
+          <input type="number" id="canh1" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+
+        </div>
+        <div class="form-group">
+          <label for="">Nhập cạnh 2</label>
+          <input type="number" id="canh2"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+        </div>
+        <div class="form-group">
+          <label for="">Nhập cạnh 3</label>
+          <input type="number" id="canh3"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+        </div>
+        <button id="btn-bai4" class="btn btn-outline-info mt-2"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">ket qua</button>
+        <p id="kq-bt4" class="mt-2 text-danger"></p>
+       </div>
+       <!-- bai 5 -->
+       <div class="mt-5 ">
+        <h3 class="text-danger">bai tap 5</h3>
+        <div class="form-group">
+            <label for="">Ngay</label>
+            <input type="number" id="txt-ngay"onKeyUp="if(this.value>31){this.value='31';}else if(this.value<1){this.value='1';}"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <div class="form-group">
+            <label for="">Thang</label>
+            <input type="number" id="txt-thang"onKeyUp="if(this.value>12){this.value='12';}else if(this.value<1){this.value='1';}" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <div class="form-group">
+            <label for="">Nam</label>
+            <input type="number" id="txt-nam"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+           
+        </div>
+        <button id="btn-bai5" class="btn btn-outline-info"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">ngay mai</button>
+        <button id="btn-bai51" class="btn btn-outline-info"style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">ngay hôm qua</button>
+        <p id="kq-bai5" class="mt-5 text-danger"></p>
+       </div>
+
+       <!-- bai 6 -->
+       <div class="mt-5">
+        <h3 class="text-danger">bai tap 6</h3>
+        <div class="form-group">
+          <label for="">Nhập ngày</label>
+          <input type="number" id="txt-month" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+
+        </div>
+        <div class="form-group">
+          <label for="">Nhập năm</label>
+          <input type="number" id="txt-year" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+        </div>
+
+        <button id="btn-bai6" class="btn btn-outline-info mt-2" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">ket qua</button>
+        <p id="kq-bt6" class="mt-2 text-danger"></p>
+       </div>
+       <!-- bai 7 -->
+       <div class="mt-5">
+        <h3 class="text-danger">bai tap 7</h3>
+        <div class="form-group">
+          <label for="">Nhập số</label>
+          <input type="text" id="txt-so" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+        </div>
+       
+
+        <button id="btn-bai7" class="btn btn-outline-info mt-2" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">ket qua</button>
+        <p id="kq-bt7" class="mt-2 text-danger"></p>
+       </div>
+       <!-- bai 8 -->
+       <div class="mt-5">
+        <h3 class="text-danger">bai tap 8</h3>
+        <div class="form-group">
+          <label for="">Nhập tên sinh viên 1:</label>
+          <input type="text" id="txt-name1" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+          <input type="text" id="txt-n1x" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+          <input type="text" id="txt-n1y" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+        </div>
+        <div class="form-group">
+          <label for="">Nhập tên sinh viên 2: </label>
+          <input type="text" id="txt-name2" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+          <input type="text" id="txt-n2x" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+          <input type="text" id="txt-n2y" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+        </div>
+        <div class="form-group">
+          <label for="">Nhập tên sinh viên 3:</label>
+          <input type="text" id="txt-name3" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+          <input type="text" id="txt-n3x" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+          <input type="text" id="txt-n3y" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+        </div>
+        <div class="form-group">
+          <label for="">Trường học</label>
+          <input type="text" id="txt-tx" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+          <input type="text" id="txt-ty" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">
+          
+        </div>
+       
+
+        <button id="btn-bai8" class="btn btn-outline-info mt-2" style="border-radius:10px ;  box-shadow: 5px 5px cornflowerblue;">ket qua</button>
+        <p id="kq-bt8" class="mt-2 text-danger"></p>
+       </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+<script src="index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

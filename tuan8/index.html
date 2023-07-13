@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container py-5 ">
+
+        
+
+       <div class="text-center">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#bai1" role="tab" aria-controls="pills-home" aria-selected="true">Bài 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#bai2" role="tab" aria-controls="pills-profile" aria-selected="false">Bài 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#bai3" role="tab" aria-controls="pills-contact" aria-selected="false">Bài 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#bai4" role="tab" aria-controls="pills-profile" aria-selected="false">Bài 4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#bai5" role="tab" aria-controls="pills-contact" aria-selected="false">Bài 5</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#bai6" role="tab" aria-controls="pills-profile" aria-selected="false">Bài 6</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#bai7" role="tab" aria-controls="pills-contact" aria-selected="false">bài 7</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#bai8" role="tab" aria-controls="pills-profile" aria-selected="false">Bài 8</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#bai9" role="tab" aria-controls="pills-contact" aria-selected="false">Bài 9</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#bai10" role="tab" aria-controls="pills-profile" aria-selected="false">Bài 10</a>
+          </li>
+          
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="pills-home-tab">
+            <button class="btn btn-outline-danger" onclick="bai1()"> Kết quả</button>
+            <div id="txt-bai1"></div>
+          </div>
+          <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <input type="text" placeholder="Nhập số N" id="txt-nhapN" style="border-radius:5px; box-shadow: 5px 5px rgb(92, 15, 127) ;">
+            <button class="btn btn-outline-info" onclick="nhapmang()" style="border-radius:5px; box-shadow: 5px 5px rgb(55, 19, 117) ;">Thêm Số</button>
+              <div class="bg bg-warning mt-3 " id="txt-number"></div>
+            <button class="btn btn-outline-danger mt-3" onclick="bai2()"> Kết quả</button>
+            <p id="txt-bai2"></p>
+          </div>
+          <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <input type="number" id="number3" placeholder="Nhập số">
+            <button class="btn btn-outline-danger" onclick="bai3()"> Kết quả</button>
+            <p id="txt-bai3"></p>
+          </div>
+          <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <input type="number" id="number4" placeholder="Nhập số">
+            <button class="btn btn-outline-danger" onclick="bai4()"> Kết quả</button>
+            <p id="txt-bai4"></p>
+          </div>
+          <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <input type="number" id="number5" placeholder="Nhập số">
+            <button class="btn btn-outline-danger" onclick="bai5()"> Kết quả</button>
+            <p id="txt-bai5"></p>
+          </div>
+          <div class="tab-pane fade" id="bai6" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <button class="btn btn-outline-danger" onclick="bai6()">Đổi chỗ</button>
+            <p id="txt-bai6"></p>
+          </div>
+          <div class="tab-pane fade" id="bai7" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <input type="number" id="number7" placeholder="Nhập số">
+            <button class="btn btn-outline-danger" onclick="bai7()">Kết Quả</button>
+            <div id="txt-bai7"></div>
+          </div>
+          <div class="tab-pane fade" id="bai8" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <button class="btn btn-outline-danger" onclick="bai8()">Kết Quả</button>
+            <p id="txt-bai8"></p>
+          </div>
+          <div class="tab-pane fade" id="bai9" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <input type="number" id="number8" placeholder="Nhập tổng sô chó và gà">
+            <input type="number" id="number9" placeholder="Nhập tổng số chân">
+            <button class="btn btn-outline-danger" onclick="bai9()">Kết Quả</button>
+            <p id="txt-bai9"></p>
+          </div>
+          <div class="tab-pane fade" id="bai10" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <input type="number" id="number10" placeholder="Nhập gio">
+            <input type="number" id="number11" placeholder="Nhập phut">
+            <button class="btn btn-outline-danger" onclick="bai10()">Kết Quả</button>
+            <p id="txt-bai10"></p>
+          </div>
+        </div>
+       </div>
+        
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <script src="index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
