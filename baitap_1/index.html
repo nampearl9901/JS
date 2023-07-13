@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container py-5 ">
+        <div class="row  ">
+            <div class=" bg-info col-sm-2  nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#bai1" role="tab" aria-controls="v-pills-home" aria-selected="true">bài 1</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bai2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Bài 2</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#bai3" role="tab" aria-controls="v-pills-messages" aria-selected="false">bài 3</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#bai4" role="tab" aria-controls="v-pills-settings" aria-selected="false">bài 4</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#bai5" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bài js thêm</a>
+               
+            </div>
+              <div class=" tab-content ml-5 " id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div>
+                        <h2 class="text-warning">Bài 1: Số Nguyên Dương Nhỏ Nhất</h2>
+                        <button class="btn btn-outline-warning mt-5 " id="btn-bai1" style="box-shadow: 5px 5px rgb(75, 108, 9); border-radius: 10px;">Xem Kết Quả</button>
+                        <p id="ketqua-bai1" class="mt-4 text-danger"></p>
+                    </div>
+                    </div>
+
+                <!-- bai2 -->
+                <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="text-center ">
+                        <h2 class="text-warning">Bài 2: tính tổng: S(n) = x + x^2 + x^3 + … + x^n</h2>
+                        <input type="text" name="" id="txt-x" placeholder="Nhập X" class="mt-5" style="box-shadow: 5px 5px rgb(75, 108, 9); border-radius: 10px;">
+                        <input type="text" id="txt-n" placeholder="Nhập N" class="mt-5" style="box-shadow: 5px 5px rgb(75, 108, 9); border-radius: 10px;">
+                        <button class="btn btn-outline-warning " id="btn-bai2" style="box-shadow: 5px 5px rgb(75, 108, 9); border-radius: 10px;">Xem Kết Quả</button>
+                        <p id="ketqua-bai2" class="mt-4 text-danger mt-5"></p>
+                    </div>
+                </div>
+                <!-- bai3 -->
+                
+                <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div>
+                        <h2 class="text-warning">Bài 3: Tính Giai Thừa</h2>
+                        <input type="text" name="" id="txt-giathua" placeholder="Nhập N" class="mt-5"style="box-shadow: 5px 5px rgb(75, 108, 9); border-radius: 5px;">
+                        <button class="btn btn-outline-warning " id="btn-bai3" style="box-shadow: 5px 5px rgb(75, 108, 9); border-radius: 10px;">Xem Kết Quả</button>
+                        <p id="ketqua-bai3" class="mt-4 text-danger"></p>
+                    </div>
+                </div>
+                
+                <!-- bai4 -->
+                <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div>
+                        <h2 class="text-warning">Bài 4: Số Nguyên Dương Nhỏ Nhất</h2>
+                        <button class="btn btn-outline-warning mt-5 " id="btn-bai4" style="box-shadow: 5px 5px rgb(75, 108, 9);">Xem Kết Quả</button>
+                        <div id="ketqua-bai4" ></div>
+                    </div>
+                </div>
+                  <!-- bài 5 -->
+            <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div>
+                    <h2 class="text-warning">Bài 5: Số Nguyên Tố Tới N</h2>
+                    <input type="text" name="" id="txt-snt" placeholder="Nhập N" class="mt-5"style="box-shadow: 5px 5px rgb(75, 108, 9); border-radius: 5px;">
+                        
+                    <button class="btn btn-outline-warning " id="btn-bai5" style="box-shadow: 5px 5px rgb(75, 108, 9);">Xem Kết Quả</button>
+                    <p id="ketqua-bai5" class="mt-4 text-danger" ></p>
+                </div>
+            </div>
+
+              </div>
+          </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <script src="index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
