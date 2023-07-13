@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container ">
+        <div class="text-center">
+            <h1  >Bài tập 1</h1>
+            <h2 class="text-danger mt-5">Tính tiền lương nhân viên</h2>
+            <div class="text-center ">
+                <label >Nhập Lương 1 ngày:  </label>
+                <input type="number" min="0" id="txt-luong-1-ngay">
+            </div>
+            <div class="text-center ">
+                <label >Nhập vào số ngày làm:  </label>
+                <input type="number" min="0" id="txt-so-ngay-lam">
+            </div>
+          
+                <button class=" mt-5 btn btn-outline-danger" onclick="Tinhtien()">Tổng Tiền</button>
+                <h3 id="result" class="mt-5 mb-5 text-muted"></h3>
+           
+           
+
+        </div>
+        <hr>
+
+        <div >
+            <h1  >Bài tập 2</h1>
+            <h2 class="text-danger mt-5">Tính giá trị trung bình</h2> 
+                <div>
+                    <label >Nhập giá trị 1:</label>
+                    <input type="number" id="txt-number1">
+                </div> 
+                <div>
+                    <label >Nhập giá trị 2:</label>
+                    <input type="number" id="txt-number2">
+                </div> 
+                <div>
+                    <label >Nhập giá trị 3:</label>
+                    <input type="number" id="txt-number3">
+                </div> 
+                <div>
+                    <label >Nhập giá trị 4:</label>
+                    <input type="number" id="txt-number4">
+                </div> 
+                <div>
+                    <label >Nhập giá trị 5:</label>
+                    <input type="number" id="txt-number5">
+                </div> 
+              
+                
+         
+            <div class=" mt-5 " >
+                <button class=" btn btn-outline-warning" onclick="Tinhtong()">Tính Tổng</button>
+                <h3 id="trungbinh" class="mt-5 mb-5 text-dark"></h3>
+            </div>
+           
+
+        </div>
+        <hr>
+
+        <div class="text-center">
+            <h1  >Bài tập 3</h1>
+            <h2 class="text-danger mt-5">Quy doi tien </h2> 
+                <div>
+                    <label >Nhập Số USD cần đổi:</label>
+                    <input type="number" id="txt-usd">
+                </div> 
+                <div>
+                    <label >Nhập 1 USD = VND:</label>
+                    <input type="number" id="txt-vnd">
+                </div> 
+               
+                
+         
+            <div class=" mt-5 " >
+                <button class=" btn btn-outline-danger" onclick="quydoi()">Quy Đổi</button>
+                <h3 id="doitien" class="mt-5 mb-5 text-dark"></h3>
+            </div>
+           
+
+        </div>
+        <hr>
+
+          <div >
+            <h1  >Bài tập 4</h1>
+            <h2 class="text-danger mt-5">Tính Diện tích và chu vi hình chữ nhật</h2> 
+                <div>
+                    <label >Nhập chiều dài:</label>
+                    <input type="number" id="txt-chieudai">
+                </div> 
+                <div>
+                    <label >Nhập chiều rộng:</label>
+                    <input type="number" id="txt-chieurong">
+                </div> 
+               
+              
+                
+         
+            <div class=" mt-5 " >
+                <button class=" btn btn-outline-warning" onclick="dientich()">Diện Tích</button>
+                <button class=" btn btn-outline-warning" onclick="chuvi()">Chu vi</button>
+                <h3 id="dientich" class="mt-5 mb-5 text-dark"></h3>
+                <h3 id="chuvi" class="mt-5 mb-5 text-dark"></h3>
+            </div>
+           
+
+        </div>
+        <hr>
+        <div class="text-center">
+            <h1  >Bài tập 5</h1>
+            <h2 class="text-danger mt-5">Tính Tổng của hai ký Số</h2> 
+                <div>
+                    <label >Nhập số có hai chữ số:</label>
+                    <input type="number" id="txt-haichuso">
+                </div> 
+  
+            <div class=" mt-5 " >
+                <button class=" btn btn-outline-warning" onclick="tongkyso()">Kết Quả</button>
+             
+                <h3 id="ketqua" class="mt-5 mb-5 text-dark"></h3>
+            </div>
+           
+
+        </div>
+      </div>
+
+
+
+    <!-- js -->
+    <script src="baitap.js">
+        
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
